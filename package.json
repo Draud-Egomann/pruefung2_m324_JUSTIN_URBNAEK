@@ -9,7 +9,8 @@
     "lint": "eslint .",
     "format": "prettier --write .",
     "format-check": "prettier --check .",
-    "test": "node_modules/.bin/mocha ./"
+    "test": "npx mocha ./",
+    "coverage": "npx nyc --reporter=lcov --reporter=text npm run test"
   },
   "repository": {
     "type": "git",
@@ -32,6 +33,7 @@
     "globals": "^15.9.0",
     "mocha": "^10.7.3",
     "npm-check-updates": "^17.1.1",
+    "nyc": "^17.1.0",
     "prettier": "^3.3.3"
   }
 }
