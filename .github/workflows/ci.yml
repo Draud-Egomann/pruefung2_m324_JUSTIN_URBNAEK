@@ -27,7 +27,7 @@ jobs:
         run: npm run format-check
 
       - name: Run tests and generate coverage report
-        run: npm coverage
+        run: npm run coverage
 
       - name: Generate coverage report in Cobertura format
         run: npx nyc report --reporter=cobertura
